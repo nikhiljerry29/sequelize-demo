@@ -1,15 +1,14 @@
-CREATE DATABASE codegig;
-USE codegig;
+CREATE DATABASE users;
+USE users;
 
-CREATE TABLE gigs(
-	id SERIAL,
-    title VARCHAR(200),
-    technologies VARCHAR(200),
-    budget VARCHAR(30),
-    gigs_description TEXT,
-    contact_email VARCHAR(50),
+CREATE TABLE user_details (
+	id INTEGER,
+    first_name VARCHAR(20),
+    last_name VARCHAR(20),
+    email_address VARCHAR(100),
+    user_password VARCHAR(500),
     createdAt DATE,
-    updatedAt DATE,
+	updatedAt DATE,
     PRIMARY KEY (id)
 );
 
